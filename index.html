@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
 </head>
 <body>
 <div id="menu">
@@ -181,9 +182,32 @@ ans
 <br/>
 <br/>
 <br/>
-contact me
+<h2><span>contact me</span></h2>
+
 <br/>
+<label for="fname">Full Name</label>
+<input type="text"> 
+&nbsp;
+<label for="email">Email</label>
+<input type="text">
 <br/>
+<label for="txtbody">Yes talk to us:</label> 
+&nbsp;
+<span id="txtbody" class="textarea" role="textbox" contenteditable></span>
+<!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script> -->
+<script>
+  $('#txtbody').tinymce.init({
+  selector: "#txtbody",
+  plugins: "emoticons autoresize",
+  toolbar: "emoticons",
+  toolbar_location: "bottom",
+  menubar: false,
+  statusbar: false
+});
+</script>
+<br>
+<button type="submit" id="fcf-button">Send Message</button>
 <br/>
 </section>
 
