@@ -4,7 +4,21 @@
 	width: 100%;
 	height: 35px;
 	background: white;
+	margin-top: -8px;
 }
+h2 {
+	width: 100%;
+	text-align: center; 
+	border-bottom: 8px solid #0c0fb8; 
+	line-height: 0.1em;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 10px 0 20px; 
+ } 
+ 
+ h2 span { 
+	 background:#fff; 
+	 padding:0 3px; 
+ }
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -13,14 +27,18 @@ ul {
 	background-color: rgb(16, 31, 243);
   }
   
-  li {
+	li {
 	float: left;
-  }
-  
-  li a {
+	padding-left:7%;
+	}
+
+	li a {
 	display: block;
 	color: white;
 	text-align: center;
 	padding: 16px;
 	text-decoration: none;
-  }
+	}
+	ul li a:hover {
+		color: rgba(12, 206, 231, 0.89);
+		}
