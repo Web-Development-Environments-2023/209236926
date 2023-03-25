@@ -55,11 +55,11 @@ ul {
 	ul li a:hover {
 		color: rgba(12, 206, 231, 0.89);
 		}
-.textarea {
+#textarea {
 	border: 1px solid rgb(49, 49, 49);
 	display: block;
 	width: 28.7%;
-	overflow: hidden;
+	overflow: fixed;
 	resize: both;
 	min-height: 60px;
 	line-height: 20px;
@@ -67,15 +67,12 @@ ul {
 	padding: 1px 6px;
 	margin-left: 7.5%;
 	}
-.textarea[contenteditable]:empty::before {
-	content: "tell me, why you want to be an hunter?";
-	color: black;
-	}
 
 .about {
 	width: 70%;
 	margin-inline-start: 15%;
 	box-shadow: 0 0px 70px 30px white;
+	background-color: rgb(204, 194, 53);
 	font-size: 25px;
 	color: rgb(25, 38, 224);
 	word-wrap: break-word;
@@ -101,6 +98,16 @@ ul {
 	bottom: 0; */
 	padding-bottom: 0px;
 }
+.col img:hover{
+	box-shadow: 0 0px 70px 10px rgb(184, 172, 12);
+	transition: .2s linear;
+	transform: scale(1.02);
+}
 #firstcol {
 	height: 100vh;
+}
+.vids iframe{
+	box-shadow: 0 0px 70px 10px rgb(4, 15, 114);
+	transition: .2s linear;
+	transform: scale(1.02);
 }

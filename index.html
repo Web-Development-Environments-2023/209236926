@@ -80,7 +80,9 @@
 <h2><span>my playlist</span></h2>
 <br/>
 <br/>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sJE9pVtGAUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></section>
+<div class="vids">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/sJE9pVtGAUk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></section>
+</div>
 
 <section id="like" class="section">
 <br/>
@@ -179,19 +181,19 @@ ans
 <h2><span>contact me</span></h2>
 
 <br/>
-<form method="post" >
-<label for="fname">Full Name</label>
-<input type="text"> 
-&nbsp;
-<label for="email">Email</label>
-<input type="email" id="email" name="email">
-<br/>
-<label for="txtbody">Yes talk to us:</label> 
-&nbsp;
-<span id="txtbody" class="textarea" role="textbox" contenteditable></span>
+<form action="mailto:shavitda@post.bgu.ac.il" method="get" enctype="text/plain">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname">
+  &nbsp;
+  <label for="subj">Last name:</label>
+  <input type="text" name="subject" placeholder="Your Name"><br>
 <br>
-<button type="submit" id="fcf-button" action="/cgi-bin/email">Send Message</button>
+<label for="textarea">Yes talk to us:</label> 
+<textarea id="textarea" name="body" cols="30" rows="10" placeholder="tell me, why you want to be an hunter?"></textarea>
+<br>
+<button type="submit" id="fcf-button" >Send Message</button>
 <br/>
+<br><br><br><br>
 </form>
 </section>
 
